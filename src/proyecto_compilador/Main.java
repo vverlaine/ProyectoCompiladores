@@ -13,7 +13,8 @@ public class Main {
 
     public static void main(String[] args) {
         
-        String          fileDir           = "C:\\Users\\gadia\\Documents\\UMG\\OneDrive - Universidad Mariano Gálvez\\Semestre7\\Compiladores\\Input.txt";
+      //  String          fileDir           = "C:\\Users\\gadia\\Documents\\UMG\\OneDrive - Universidad Mariano Gálvez\\Semestre7\\Compiladores\\Input.txt";
+          String          fileDir           = "C:\\Users\\k-47e\\Desktop\\proyecto compi\\Input.txt";
         FileReader      leerArchivo       = null;
         BufferedReader  textoArchivo      = null;
         List            contenido         = new ArrayList();
@@ -134,7 +135,6 @@ public class Main {
             tabla1[0][0]=temp.substring(0,largo);
             tabla1[0][1]="VARIABLE";
             temp=temp.substring(largo);
-            System.out.println("temp "+temp);
             for(int x = 1 ; x < tabla1.length;x++){
                 va1=99;
                 va2=99;
@@ -193,10 +193,12 @@ public class Main {
                 }else if(va3<va1 & va3<va2){
                     va4=3;
                 }
+                /*
                 System.out.println("va1 "+va1+" t1 "+t1+" t5 "+t5 );
                 System.out.println("va2 "+va2+" t2 "+t2+" t4 "+t4);
                 System.out.println("va3 "+va3+" t3 "+t3);
                 System.out.println("va4 "+va4);
+*/
                 switch(va4){
                     case 1:
                         tabla1[x][0]=temp.substring(0,t1.length());
@@ -211,7 +213,6 @@ public class Main {
                         tabla1[x][2]=t4;
                         tabla1[x][3]="N/A";                        
                         temp=temp.replace(tabla1[x][0],"");
-                        System.out.println(temp);
                         break;
                     case 3:
                         tabla1[x][0]=temp.substring(0, t3.length());
@@ -219,10 +220,8 @@ public class Main {
                         tabla1[x][2]="Integer";
                         tabla1[x][3]=t3;                        
                         temp=temp.replace(tabla1[x][0],"");
-                        System.out.println(temp);
                         break;                   
                 }
-                System.out.println("temp "+temp);
             }                 
             }
         System.out.println("#\tTOKEN\t\t\tCATEGORIA\t\t\tTIPO\t\t\tVALOR\t\t\tPRIORIDAD");
