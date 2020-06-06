@@ -13,8 +13,8 @@ public class Main {
 
     public static void main(String[] args) {
         //String          fileDir           = "C:\\Users\\gadia\\Documents\\UMG\\OneDrive - Universidad Mariano Gálvez\\Semestre7\\Compiladores\\Input.txt";
-     //   String          fileDir           = "C:\\Users\\gadia\\Documents\\UMG\\OneDrive - Universidad Mariano Gálvez\\Semestre7\\Compiladores\\Input.txt";
-         String          fileDir           = "C:\\Users\\k-47e\\Desktop\\proyecto compi\\Input.txt";
+        String          fileDir           = "C:\\Users\\gadia\\Documents\\UMG\\OneDrive - Universidad Mariano Gálvez\\Semestre7\\Compiladores\\Input.txt";
+        // String          fileDir           = "C:\\Users\\k-47e\\Desktop\\proyecto compi\\Input.txt";
         FileReader      leerArchivo       = null;
         BufferedReader  textoArchivo      = null;
         List            contenido         = new ArrayList();
