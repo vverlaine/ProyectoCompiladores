@@ -95,7 +95,7 @@ public class Main {
         //CREACION DE TABLA DE SIMBOLOS -- FORMULA 1
         System.out.println("\n\nVALIDACION FORMULA 1----------------------------------------------------");
         p=10;
-        String tabla1[][] = new String[11][5];
+        String tabla1[][] = new String[15][5];
         System.out.println(datos[p]);
         
         
@@ -221,7 +221,7 @@ public class Main {
                 }
                 for (int z = 10; z < 100; z++) {
                     if(va3==99){
-                    if(temp.length()==1){
+                    if(temp.length()<2){
                     }else if(va3>temp.substring(0,2).indexOf(String.valueOf(z))){
                             t3 =String.valueOf(z);
                             va3=temp.substring(0,2).indexOf(t3);
@@ -233,7 +233,8 @@ public class Main {
                 }
                 if(va3==99){
                     for (int z = 10; z > 0; z--) {
-                        if(va3>temp.substring(0,1).indexOf(String.valueOf(z))){
+                    if(temp.length()<1){
+                    }else if(va3>temp.substring(0,1).indexOf(String.valueOf(z))){
                             t3 =String.valueOf(z);
                             va3=temp.indexOf(t3);
                         }
@@ -277,9 +278,11 @@ public class Main {
             }
         System.out.println("#\tTOKEN\t\t\tCATEGORIA\t\t\tTIPO\t\t\tVALOR\t\t\tPRIORIDAD");
         for(int x = 0 ; x < tabla1.length;x++){
-            System.out.print(" "+(x+1)+"\t");
             for(int y =0 ; y < tabla1[x].length;y++){
-                System.out.print(tabla1[x][y]+"\t\t\t");
+                if(tabla1[x][y]==null){
+                }else{
+                    System.out.print(" "+(x+1)+"\t"+tabla1[x][y]+"\t\t\t");
+                }
             }
             System.out.println("");
         }
@@ -288,11 +291,11 @@ public class Main {
         
 ////////////////////////////////////////////////////////////////////////////////////////formula 2/////////////////////////////////////////////////////////////////////////////////////////////////////        
         
-        System.out.println("\n------------------------------------------------------------------------\n");        
+     
                 //CREACION DE TABLA DE SIMBOLOS -- FORMULA 2
         System.out.println("\n\nVALIDACION FORMULA 2----------------------------------------------------");
         p=11;
-        String tabla2[][] = new String[9][5];
+        String tabla2[][] = new String[15][5];
         System.out.println(datos[p]);
              
         
@@ -418,7 +421,7 @@ public class Main {
                 }
                 for (int z = 10; z < 100; z++) {
                     if(va3==99){
-                    if(temp.length()==1){
+                    if(temp.length()<2){
                     }else if(va3>temp.substring(0,2).indexOf(String.valueOf(z))){
                             t3 =String.valueOf(z);
                             va3=temp.substring(0,2).indexOf(t3);
@@ -430,7 +433,8 @@ public class Main {
                 }
                 if(va3==99){
                     for (int z = 10; z > 0; z--) {
-                        if(va3>temp.substring(0,1).indexOf(String.valueOf(z))){
+                    if(temp.length()<1){
+                    }else if(va3>temp.substring(0,1).indexOf(String.valueOf(z))){
                             t3 =String.valueOf(z);
                             va3=temp.indexOf(t3);
                         }
@@ -474,19 +478,21 @@ public class Main {
             }
         System.out.println("#\tTOKEN\t\t\tCATEGORIA\t\t\tTIPO\t\t\tVALOR\t\t\tPRIORIDAD");
         for(int x = 0 ; x < tabla2.length;x++){
-            System.out.print(" "+(x+1)+"\t");
             for(int y =0 ; y < tabla2[x].length;y++){
-                System.out.print(tabla2[x][y]+"\t\t\t");
+                if(tabla1[x][y]==null){
+                }else{
+                    System.out.print(" "+(x+1)+"\t"+tabla2[x][y]+"\t\t\t");
+                }
             }
             System.out.println("");
         }
         }
   /////////////////////////////////////////////////////////////////////////formula 3/////////////////////////////////////////////////////////////////////////////////////////////////////////      
-        System.out.println("\n------------------------------------------------------------------------\n");        
+     
                 //CREACION DE TABLA DE SIMBOLOS -- FORMULA 3
         System.out.println("\n\nVALIDACION FORMULA 3----------------------------------------------------");
         p=12;
-        String tabla3[][] = new String[9][5];
+        String tabla3[][] = new String[15][5];
         System.out.println(datos[p]);
         
         //////////////////////////validacion operadores juntos
@@ -608,7 +614,7 @@ public class Main {
                 }
                 for (int z = 10; z < 100; z++) {
                     if(va3==99){
-                    if(temp.length()==1){
+                    if(temp.length()<2){
                     }else if(va3>temp.substring(0,2).indexOf(String.valueOf(z))){
                             t3 =String.valueOf(z);
                             va3=temp.substring(0,2).indexOf(t3);
@@ -620,7 +626,8 @@ public class Main {
                 }
                 if(va3==99){
                     for (int z = 10; z > 0; z--) {
-                        if(va3>temp.substring(0,1).indexOf(String.valueOf(z))){
+                    if(temp.length()<1){
+                    }else if(va3>temp.substring(0,1).indexOf(String.valueOf(z))){
                             t3 =String.valueOf(z);
                             va3=temp.indexOf(t3);
                         }
@@ -664,20 +671,22 @@ public class Main {
             }
         System.out.println("#\tTOKEN\t\t\tCATEGORIA\t\t\tTIPO\t\t\tVALOR\t\t\tPRIORIDAD");
         for(int x = 0 ; x < tabla3.length;x++){
-            System.out.print(" "+(x+1)+"\t");
             for(int y =0 ; y < tabla3[x].length;y++){
-                System.out.print(tabla3[x][y]+"\t\t\t");
+                if(tabla1[x][y]==null){
+                }else{
+                    System.out.print(" "+(x+1)+"\t"+tabla1[x][y]+"\t\t\t");
+                }
             }
             System.out.println("");
         }
         }
  ////////////////////////////////////////////////////////////////////////////////// formula 4 /////////////////////////////////////////////////////////////////////////////////////////////       
         
-        System.out.println("\n------------------------------------------------------------------------\n");        
+        
                 //CREACION DE TABLA DE SIMBOLOS -- FORMULA 4
         System.out.println("\n\nVALIDACION FORMULA 4----------------------------------------------------");
         p=13;
-        String tabla4[][] = new String[8][5];
+        String tabla4[][] = new String[15][5];
         System.out.println(datos[p]);
              
         //////////////////////////validacion operadores juntos
@@ -797,7 +806,7 @@ public class Main {
                 }
                 for (int z = 10; z < 100; z++) {
                     if(va3==99){
-                        if(temp.length()==1){
+                        if(temp.length()<2){
                     }else if(va3>temp.substring(0,2).indexOf(String.valueOf(z))){
                             t3 =String.valueOf(z);
                             va3=temp.substring(0,2).indexOf(t3);
@@ -809,7 +818,8 @@ public class Main {
                 }
                 if(va3==99){
                     for (int z = 10; z > 0; z--) {
-                        if(va3>temp.substring(0,1).indexOf(String.valueOf(z))){
+                    if(temp.length()<1){
+                    }else if(va3>temp.substring(0,1).indexOf(String.valueOf(z))){
                             t3 =String.valueOf(z);
                             va3=temp.indexOf(t3);
                         }
@@ -853,19 +863,21 @@ public class Main {
             }
         System.out.println("#\tTOKEN\t\t\tCATEGORIA\t\t\tTIPO\t\t\tVALOR\t\t\tPRIORIDAD");
         for(int x = 0 ; x < tabla4.length;x++){
-            System.out.print(" "+(x+1)+"\t");
             for(int y =0 ; y < tabla4[x].length;y++){
-                System.out.print(tabla4[x][y]+"\t\t\t");
+                if(tabla1[x][y]==null){
+                }else{
+                    System.out.print(" "+(x+1)+"\t"+tabla1[x][y]+"\t\t\t");
+                }
             }
             System.out.println("");
         }
             }
  ///////////////////////////////////////////////////////////////////////////////////////formula 5 ///////////////////////////////////////////////////////////////////////////////////////       
-        System.out.println("\n------------------------------------------------------------------------\n");        
+
                 //CREACION DE TABLA DE SIMBOLOS -- FORMULA 5
         System.out.println("\n\nVALIDACION FORMULA 5----------------------------------------------------");
         p=14;
-        String tabla5[][] = new String[8][5];
+        String tabla5[][] = new String[15][5];
         System.out.println(datos[p]);
         
         
@@ -989,7 +1001,7 @@ public class Main {
                     }
                 }
                 for (int z = 10; z < 100; z++) {
-                    if(temp.length()==1){
+                    if(temp.length()<2){
                     }else if(va3==99){
                         if(va3>temp.substring(0,2).indexOf(String.valueOf(z))){
                             t3 =String.valueOf(z);
@@ -1002,7 +1014,8 @@ public class Main {
                 }
                 if(va3==99){
                     for (int z = 10; z > 0; z--) {
-                        if(va3>temp.substring(0,1).indexOf(String.valueOf(z))){
+                    if(temp.length()<1){
+                    }else if(va3>temp.substring(0,1).indexOf(String.valueOf(z))){
                             t3 =String.valueOf(z);
                             va3=temp.indexOf(t3);
                         }
@@ -1045,9 +1058,11 @@ public class Main {
             }
         System.out.println("#\tTOKEN\t\t\tCATEGORIA\t\t\tTIPO\t\t\tVALOR\t\t\tPRIORIDAD");
         for(int x = 0 ; x < tabla5.length;x++){
-            System.out.print(" "+(x+1)+"\t");
             for(int y =0 ; y < tabla5[x].length;y++){
-                System.out.print(tabla5[x][y]+"\t\t\t");
+                if(tabla1[x][y]==null){
+                }else{
+                    System.out.print(" "+(x+1)+"\t"+tabla1[x][y]+"\t\t\t");
+                }
             }
             System.out.println("");
         }
