@@ -189,6 +189,7 @@ public class Main {
             tabla1[0][0]=temp.substring(0,largo);
             tabla1[0][1]="VARIABLE";
             temp=temp.substring(largo);
+
             for(int x = 1 ; x < tabla1.length;x++){
                 va1=99;
                 va2=99;
@@ -196,8 +197,9 @@ public class Main {
                 va4=0;
                 for(int z = 0; z < operadores.length ; z++){
                     if(va1==99){
-                        if(va1>temp.indexOf(operadores[z])){
-                            va1=temp.indexOf(operadores[z]);
+                    if(temp.length()<1){
+                    }else if(va1>temp.substring(0,1).indexOf(operadores[z])){
+                            va1=temp.substring(0,1).indexOf(operadores[z]);
                             t1=operadores[z];
                             t5=doperadores[z];
                             if (va1<0){
@@ -206,6 +208,7 @@ public class Main {
                         }    
                     }
                 }
+
                 for(int z = 0; z < constantes.length ; z++){
                     if(va2==99){
                         if(va2>temp.indexOf(constantes[z][0])){
@@ -250,7 +253,6 @@ public class Main {
                 }else if(va3<va1 & va3<va2){
                     va4=3;
                 }
-
                 switch(va4){
                     case 1:
                         tabla1[x][0]=temp.substring(0,t1.length());
@@ -396,8 +398,9 @@ public class Main {
                 va4=0;
                 for(int z = 0; z < operadores.length ; z++){
                     if(va1==99){
-                        if(va1>temp.indexOf(operadores[z])){
-                            va1=temp.indexOf(operadores[z]);
+                    if(temp.length()<1){
+                    }else if(va1>temp.substring(0,1).indexOf(operadores[z])){
+                            va1=temp.substring(0,1).indexOf(operadores[z]);
                             t1=operadores[z];
                             t5=doperadores[z];
                             if (va1<0){
@@ -479,7 +482,7 @@ public class Main {
         System.out.println("#\tTOKEN\t\t\tCATEGORIA\t\t\tTIPO\t\t\tVALOR\t\t\tPRIORIDAD");
         for(int x = 0 ; x < tabla2.length;x++){
             for(int y =0 ; y < tabla2[x].length;y++){
-                if(tabla1[x][y]==null){
+                if(tabla2[x][y]==null){
                 }else{
                     System.out.print(" "+(x+1)+"\t"+tabla2[x][y]+"\t\t\t");
                 }
@@ -589,8 +592,9 @@ public class Main {
                 va4=0;
                 for(int z = 0; z < operadores.length ; z++){
                     if(va1==99){
-                        if(va1>temp.indexOf(operadores[z])){
-                            va1=temp.indexOf(operadores[z]);
+                    if(temp.length()<1){
+                    }else if(va1>temp.substring(0,1).indexOf(operadores[z])){
+                            va1=temp.substring(0,1).indexOf(operadores[z]);
                             t1=operadores[z];
                             t5=doperadores[z];
                             if (va1<0){
@@ -672,9 +676,9 @@ public class Main {
         System.out.println("#\tTOKEN\t\t\tCATEGORIA\t\t\tTIPO\t\t\tVALOR\t\t\tPRIORIDAD");
         for(int x = 0 ; x < tabla3.length;x++){
             for(int y =0 ; y < tabla3[x].length;y++){
-                if(tabla1[x][y]==null){
+                if(tabla3[x][y]==null){
                 }else{
-                    System.out.print(" "+(x+1)+"\t"+tabla1[x][y]+"\t\t\t");
+                    System.out.print(" "+(x+1)+"\t"+tabla3[x][y]+"\t\t\t");
                 }
             }
             System.out.println("");
@@ -781,8 +785,9 @@ public class Main {
                 va4=0;
                 for(int z = 0; z < operadores.length ; z++){
                     if(va1==99){
-                        if(va1>temp.indexOf(operadores[z])){
-                            va1=temp.indexOf(operadores[z]);
+                    if(temp.length()<1){
+                    }else if(va1>temp.substring(0,1).indexOf(operadores[z])){
+                            va1=temp.substring(0,1).indexOf(operadores[z]);
                             t1=operadores[z];
                             t5=doperadores[z];
                             if (va1<0){
@@ -864,9 +869,9 @@ public class Main {
         System.out.println("#\tTOKEN\t\t\tCATEGORIA\t\t\tTIPO\t\t\tVALOR\t\t\tPRIORIDAD");
         for(int x = 0 ; x < tabla4.length;x++){
             for(int y =0 ; y < tabla4[x].length;y++){
-                if(tabla1[x][y]==null){
+                if(tabla4[x][y]==null){
                 }else{
-                    System.out.print(" "+(x+1)+"\t"+tabla1[x][y]+"\t\t\t");
+                    System.out.print(" "+(x+1)+"\t"+tabla4[x][y]+"\t\t\t");
                 }
             }
             System.out.println("");
@@ -977,8 +982,9 @@ public class Main {
 
                 for(int z = 0; z < operadores.length ; z++){
                     if(va1==99){
-                        if(va1>temp.indexOf(operadores[z])){
-                            va1=temp.indexOf(operadores[z]);
+                    if(temp.length()<1){
+                    }else if(va1>temp.substring(0,1).indexOf(operadores[z])){
+                            va1=temp.substring(0,1).indexOf(operadores[z]);
                             t1=operadores[z];
                             t5=doperadores[z];
                             if (va1<0){
@@ -1059,9 +1065,9 @@ public class Main {
         System.out.println("#\tTOKEN\t\t\tCATEGORIA\t\t\tTIPO\t\t\tVALOR\t\t\tPRIORIDAD");
         for(int x = 0 ; x < tabla5.length;x++){
             for(int y =0 ; y < tabla5[x].length;y++){
-                if(tabla1[x][y]==null){
+                if(tabla5[x][y]==null){
                 }else{
-                    System.out.print(" "+(x+1)+"\t"+tabla1[x][y]+"\t\t\t");
+                    System.out.print(" "+(x+1)+"\t"+tabla5[x][y]+"\t\t\t");
                 }
             }
             System.out.println("");
