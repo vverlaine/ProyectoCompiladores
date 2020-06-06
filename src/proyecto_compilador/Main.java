@@ -36,6 +36,7 @@ public class Main {
         String          t3                = ""; 
         String          t4                = "";
         String          t5                = "";
+        String          t6                = "";
         
         try{
             leerArchivo = new FileReader(new File(fileDir));
@@ -211,6 +212,7 @@ public class Main {
                             va2=temp.indexOf(constantes[z][0]);
                             t2=constantes[z][0];
                             t4=constantes[z][2];
+                            t6=constantes[z][4].replace(";","");
                             if(va2<0){
                                 va2=99;
                             }
@@ -260,7 +262,7 @@ public class Main {
                         tabla1[x][0]=temp.substring(0, t2.length());
                         tabla1[x][1]="VARIABLE";
                         tabla1[x][2]=t4;
-                        tabla1[x][3]="N/A";                        
+                        tabla1[x][3]=t6;                        
                         temp=temp.substring(t2.length(),temp.length());
                         break;
                     case 3:
@@ -407,6 +409,7 @@ public class Main {
                             va2=temp.indexOf(constantes[z][0]);
                             t2=constantes[z][0];
                             t4=constantes[z][2];
+                            t6=constantes[z][4].replace(";","");
                             if(va2<0){
                                 va2=99;
                             }
@@ -456,7 +459,7 @@ public class Main {
                         tabla2[x][0]=temp.substring(0, t2.length());
                         tabla2[x][1]="VARIABLE";
                         tabla2[x][2]=t4;
-                        tabla2[x][3]="N/A";                        
+                        tabla2[x][3]=t6;                        
                         temp=temp.substring(t2.length(),temp.length());
                         break;
                     case 3:
@@ -596,6 +599,7 @@ public class Main {
                             va2=temp.indexOf(constantes[z][0]);
                             t2=constantes[z][0];
                             t4=constantes[z][2];
+                            t6=constantes[z][4].replace(";","");
                             if(va2<0){
                                 va2=99;
                             }
@@ -645,7 +649,7 @@ public class Main {
                         tabla3[x][0]=temp.substring(0, t2.length());
                         tabla3[x][1]="VARIABLE";
                         tabla3[x][2]=t4;
-                        tabla3[x][3]="N/A";                        
+                        tabla3[x][3]=t6;                        
                         temp=temp.substring(t2.length(),temp.length());
                         break;
                     case 3:
@@ -784,6 +788,7 @@ public class Main {
                             va2=temp.indexOf(constantes[z][0]);
                             t2=constantes[z][0];
                             t4=constantes[z][2];
+                            t6=constantes[z][4].replace(";","");
                             if(va2<0){
                                 va2=99;
                             }
@@ -833,7 +838,7 @@ public class Main {
                         tabla4[x][0]=temp.substring(0, t2.length());
                         tabla4[x][1]="VARIABLE";
                         tabla4[x][2]=t4;
-                        tabla4[x][3]="N/A";                        
+                        tabla4[x][3]=t6;                        
                         temp=temp.substring(t2.length(),temp.length());
                         break;
                     case 3:
@@ -976,6 +981,7 @@ public class Main {
                             va2=temp.indexOf(constantes[z][0]);
                             t2=constantes[z][0];
                             t4=constantes[z][2];
+                            t6=constantes[z][4].replace(";","");
                             if(va2<0){
                                 va2=99;
                             }
@@ -1024,7 +1030,7 @@ public class Main {
                         tabla5[x][0]=temp.substring(0, t2.length());
                         tabla5[x][1]="VARIABLE";
                         tabla5[x][2]=t4;
-                        tabla5[x][3]="N/A";                        
+                        tabla5[x][3]=t6;                        
                         temp=temp.substring(t2.length(),temp.length());
                         break;
                     case 3:
