@@ -62,20 +62,16 @@ public class Main {
             System.out.println(e);
         }
         System.out.println("------------------------------------------------------------------------\n");
-        System.out.println("LECTURA DE DATOS CARGADOS-----------------------------------------------");
         String[] datos = new String[contenido.size()];
         for(int i = 0; i < contenido.size(); i++) {
             String[] lineElements = (String[]) contenido.get(i);
             for (String lineElement : lineElements) {
                 datos[i]=lineElement;
-                System.out.print("linea "+i+": "+datos[i] + " ");
             }
-            System.out.println();
         }
-        System.out.println("------------------------------------------------------------------------\n");
+
         //CONSTANTES
         for (int i = 0; i < constantes.length; i++) {
-            System.out.println("");
             for (int j = 0; j < constantes[i].length; j++) {
                 int k=i+5;
                 if(datos[k].indexOf(" ")<0){
@@ -86,12 +82,9 @@ public class Main {
                 constantes[i][j]=datos[k].substring(0,largo).replace(" ", "");
                 temp=datos[k].substring(largo);
                 datos[k]=temp;
-                System.out.print(constantes[i][j]+"\t");
-            }
-            
+            }  
         }
-       
-         System.out.println("\n------------------------------------------------------------------------\n");       
+           
         //CREACION DE TABLA DE SIMBOLOS -- FORMULA 1
         System.out.println("\n\nVALIDACION FORMULA 1----------------------------------------------------");
         p=10;
