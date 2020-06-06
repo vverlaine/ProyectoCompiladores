@@ -13,7 +13,8 @@ public class Main {
 
     public static void main(String[] args) {
         //String          fileDir           = "C:\\Users\\gadia\\Documents\\UMG\\OneDrive - Universidad Mariano Gálvez\\Semestre7\\Compiladores\\Input.txt";
-        String          fileDir           = "C:\\Users\\gadia\\Documents\\UMG\\OneDrive - Universidad Mariano Gálvez\\Semestre7\\Compiladores\\Input.txt";
+     //   String          fileDir           = "C:\\Users\\gadia\\Documents\\UMG\\OneDrive - Universidad Mariano Gálvez\\Semestre7\\Compiladores\\Input.txt";
+         String          fileDir           = "C:\\Users\\k-47e\\Desktop\\proyecto compi\\Input.txt";
         FileReader      leerArchivo       = null;
         BufferedReader  textoArchivo      = null;
         List            contenido         = new ArrayList();
@@ -95,6 +96,54 @@ public class Main {
         p=10;
         String tabla1[][] = new String[10][5];
         System.out.println(datos[p]);
+        
+        
+        /////validacion si hay operadores juntos
+        
+            try {
+     String val="" ; 
+        val= datos[p];
+        
+        String formula = "";
+         
+        int bandera=0;
+        
+  
+         for (int a = 9; a <=29; a++) {
+  formula= val.substring(9,a);
+  
+  
+  if (((formula.indexOf("+")>0))||((formula.indexOf("*")>0)) || ((formula.indexOf("-")>0))|| ((formula.indexOf("/")>0))||((formula.indexOf(";")>0))){
+      
+    if (((formula.indexOf("+")>0))||((formula.indexOf("*")>0)) || ((formula.indexOf("-")>0))|| ((formula.indexOf("/")>0))||((formula.indexOf(";")>0)))  
+    
+    {
+      
+          bandera=1;
+      }
+    else if (bandera==0){
+              System.out.println("todo bien");
+         }
+    
+  }
+  }
+         System.out.println(bandera);
+         if (bandera==1){
+              System.out.println("ERROR: 2 OPERADORES SEGUIDOS");
+         }
+
+
+        } catch (Exception a){
+             System.out.println("");
+        } finally {
+
+        
+        
+        
+      
+        
+        
+        
              
         temp=datos[p];
         if(temp.indexOf("(")>0){
@@ -236,6 +285,9 @@ public class Main {
             System.out.println("");
         }
         
+    }
+        
+////////////////////////////////////////////////////////////////////////////////////////formula 2/////////////////////////////////////////////////////////////////////////////////////////////////////        
         
         System.out.println("\n------------------------------------------------------------------------\n");        
                 //CREACION DE TABLA DE SIMBOLOS -- FORMULA 2
@@ -244,6 +296,54 @@ public class Main {
         String tabla2[][] = new String[8][5];
         System.out.println(datos[p]);
              
+        
+        
+        ///////////////////////////validacion operadores juntos//////////////////////////////////////////////
+        
+        
+        try {
+     String val="" ; 
+        val= datos[p];
+        
+        String formula = "";
+         
+        int bandera=0;
+        
+  
+         for (int a = 9; a <=29; a++) {
+  formula= val.substring(9,a);
+  
+  
+  if (((formula.indexOf("+")>0))||((formula.indexOf("*")>0)) || ((formula.indexOf("-")>0))|| ((formula.indexOf("/")>0))||((formula.indexOf(";")>0))){
+      
+    if (((formula.indexOf("+")>0))||((formula.indexOf("*")>0)) || ((formula.indexOf("-")>0))|| ((formula.indexOf("/")>0))||((formula.indexOf(";")>0)))  
+    
+    {
+      
+          bandera=1;
+      }
+    else if (bandera==0){
+              System.out.println("todo bien");
+         }
+    
+  }
+  }
+         
+         if (bandera==1){
+              System.out.println("ERROR: 2 OPERADORES SEGUIDOS");
+         }
+
+
+        } catch (Exception a){
+             System.out.println("");
+        } finally {
+
+        
+        
+        
+        
+        
+        
         temp=datos[p];
         if(temp.indexOf("(")>0){
             temp=temp.substring(0,temp.indexOf("("))+temp.substring(temp.indexOf("(")+1,temp.length());
@@ -383,14 +483,58 @@ public class Main {
             }
             System.out.println("");
         }
-        
-        
+        }
+  /////////////////////////////////////////////////////////////////////////formula 3/////////////////////////////////////////////////////////////////////////////////////////////////////////      
         System.out.println("\n------------------------------------------------------------------------\n");        
                 //CREACION DE TABLA DE SIMBOLOS -- FORMULA 3
         System.out.println("\n\nVALIDACION FORMULA 3----------------------------------------------------");
         p=12;
         String tabla3[][] = new String[7][5];
         System.out.println(datos[p]);
+        
+        //////////////////////////validacion operadores juntos
+        
+        try {
+     String val="" ; 
+        val= datos[p];
+        
+        String formula = "";
+         
+        int bandera3=0;
+        
+  
+         for (int a = 9; a <=29; a++) {
+  formula= val.substring(9,a);
+  
+  
+  if (((formula.indexOf("+")>0))||((formula.indexOf("*")>0)) || ((formula.indexOf("-")>0))|| ((formula.indexOf("/")>0))){
+      
+    if (((formula.indexOf("+")>0))||((formula.indexOf("*")>0)) || ((formula.indexOf("-")>0))|| ((formula.indexOf("/")>0)))  
+    
+    {
+      
+          bandera3=1;
+      }
+    else if (bandera3==0){
+              System.out.println("todo bien");
+         }
+    
+  }
+  }
+        
+         if (bandera3==1){
+              System.out.println("ERROR: 2 OPERADORES SEGUIDOS");
+         }
+
+
+        } catch (Exception a){
+             System.out.println("");
+        } finally {
+
+        
+        
+        
+        
              
         temp=datos[p];
         if(temp.indexOf("(")>0){
@@ -531,7 +675,8 @@ public class Main {
             }
             System.out.println("");
         }
-        
+        }
+ ////////////////////////////////////////////////////////////////////////////////// formula 4 /////////////////////////////////////////////////////////////////////////////////////////////       
         
         System.out.println("\n------------------------------------------------------------------------\n");        
                 //CREACION DE TABLA DE SIMBOLOS -- FORMULA 4
@@ -540,6 +685,48 @@ public class Main {
         String tabla4[][] = new String[7][5];
         System.out.println(datos[p]);
              
+        //////////////////////////validacion operadores juntos
+        
+        
+            try {
+     String val="" ; 
+        val= datos[p];
+        
+        String formula = "";
+         
+        int bandera=0;
+        
+  
+         for (int a = 9; a <=val.length(); a++) {
+  formula= val.substring(9,a);
+  
+  
+  if (((formula.indexOf("+")>0))||((formula.indexOf("*")>0)) || ((formula.indexOf("-")>0))|| ((formula.indexOf("/")>0))||((formula.indexOf(";")>0))){
+      
+    if (((formula.indexOf("+")>0))||((formula.indexOf("*")>0)) || ((formula.indexOf("-")>0))|| ((formula.indexOf("/")>0))||((formula.indexOf(";")>0)))  
+    
+    {
+      
+          bandera=1;
+      }
+    else if (bandera==0){
+              System.out.println("todo bien");
+         }
+    
+  }
+  }
+         
+         if (bandera==1){
+              System.out.println("ERROR: 2 OPERADORES SEGUIDOS");
+         }
+
+
+        } catch (Exception a){
+             System.out.println("");
+        } finally {
+
+         
+        
         temp=datos[p];
         if(temp.indexOf("(")>0){
             temp=temp.substring(0,temp.indexOf("("))+temp.substring(temp.indexOf("(")+1,temp.length());
@@ -679,14 +866,60 @@ public class Main {
             }
             System.out.println("");
         }
-        
-        
+            }
+ ///////////////////////////////////////////////////////////////////////////////////////formula 5 ///////////////////////////////////////////////////////////////////////////////////////       
         System.out.println("\n------------------------------------------------------------------------\n");        
                 //CREACION DE TABLA DE SIMBOLOS -- FORMULA 5
         System.out.println("\n\nVALIDACION FORMULA 5----------------------------------------------------");
-        p=13;
+        p=14;
         String tabla5[][] = new String[7][5];
         System.out.println(datos[p]);
+        
+        
+        //////////////validacion operadores juntos
+        
+            try {
+     String val="" ; 
+        val= datos[p];
+        
+        String formula = "";
+         
+        int bandera=0;
+        
+  
+         for (int a = 9; a <=val.length(); a++) {
+  formula= val.substring(9,a);
+  
+  
+  if (((formula.indexOf("+")>0))||((formula.indexOf("*")>0)) || ((formula.indexOf("-")>0))|| ((formula.indexOf("/")>0))||((formula.indexOf(";")>0))||((formula.indexOf(")")>0))){
+      
+    if (((formula.indexOf("+")>0))||((formula.indexOf("*")>0)) || ((formula.indexOf("-")>0))|| ((formula.indexOf("/")>0))||((formula.indexOf(";")>0))||((formula.indexOf(")")>0)))  
+    
+    {
+      
+          bandera=1;
+      }
+    else if (bandera==0){
+              System.out.println("todo bien");
+         }
+    
+  }
+  }
+         
+         if (bandera==1){
+              System.out.println("ERROR: 2 OPERADORES SEGUIDOS");
+         }
+
+
+        } catch (Exception a){
+             System.out.println("");
+        } finally {
+
+         
+   
+        
+      
+        
              
         temp=datos[p];
         if(temp.indexOf("(")>0){
@@ -829,4 +1062,5 @@ public class Main {
         }
 
     }
+}
 }
