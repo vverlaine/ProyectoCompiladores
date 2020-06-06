@@ -170,8 +170,8 @@ public class Main {
                 System.out.println("ERROR: FALTA CERRAR PARENTESIS");
             }
         }
-        if(temp.indexOf("(")>0){
-            temp=temp.substring(0,temp.indexOf("("))+temp.substring(temp.indexOf("(")+1,temp.length());
+        if(temp.indexOf(")")>0){
+            temp=temp.substring(0,temp.indexOf(")"))+temp.substring(temp.indexOf("(")+1,temp.length());
             if(temp.indexOf(")")>0){
                 temp=temp.substring(0,temp.indexOf(")"))+temp.substring(temp.indexOf(")")+1,temp.length());
             }else{
@@ -946,13 +946,9 @@ public class Main {
                 System.out.println("ERROR: FALTA CERRAR PARENTESIS");
             }
         }
-        if(temp.indexOf("(")>0){
-            temp=temp.substring(0,temp.indexOf("("))+temp.substring(temp.indexOf("(")+1,temp.length());
-            if(temp.indexOf(")")>0){
-                temp=temp.substring(0,temp.indexOf(")"))+temp.substring(temp.indexOf(")")+1,temp.length());
-            }else{
-                System.out.println("ERROR: FALTA CERRAR PARENTESIS");
-            }
+        if(temp.indexOf(")")>0){
+            temp=temp.replace(")","");
+            System.out.println("ERROR: FALTA ABRIR PARENTESIS");
         }
         
         
@@ -973,6 +969,7 @@ public class Main {
                 va2=99;
                 va3=99;
                 va4=0;
+
                 for(int z = 0; z < operadores.length ; z++){
                     if(va1==99){
                         if(va1>temp.indexOf(operadores[z])){
@@ -998,7 +995,8 @@ public class Main {
                     }
                 }
                 for (int z = 10; z < 100; z++) {
-                    if(va3==99){
+                    if(temp.length()==1){
+                    }else if(va3==99){
                         if(va3>temp.substring(0,2).indexOf(String.valueOf(z))){
                             t3 =String.valueOf(z);
                             va3=temp.substring(0,2).indexOf(t3);
@@ -1026,7 +1024,6 @@ public class Main {
                 }else if(va3<va1 & va3<va2){
                     va4=3;
                 }
-                
                 switch(va4){
                     case 1:
                         tabla5[x][0]=temp.substring(0,t1.length());
