@@ -273,10 +273,14 @@ public class Main {
             }
         System.out.println("#\tTOKEN\t\t\tCATEGORIA\t\t\tTIPO\t\t\tVALOR\t\t\tPRIORIDAD");
         for(int x = 0 ; x < tabla1.length;x++){
+            if(tabla1[x][0]==null){
+            }else{
+                System.out.print(" "+(x+1));
+            }
             for(int y =0 ; y < tabla1[x].length;y++){
                 if(tabla1[x][y]==null){
                 }else{
-                    System.out.print(" "+(x+1)+"\t"+tabla1[x][y]+"\t\t\t");
+                    System.out.print("\t"+tabla1[x][y]+"\t\t\t");
                 }
             }
             System.out.println("");
@@ -474,10 +478,13 @@ public class Main {
             }
         System.out.println("#\tTOKEN\t\t\tCATEGORIA\t\t\tTIPO\t\t\tVALOR\t\t\tPRIORIDAD");
         for(int x = 0 ; x < tabla2.length;x++){
-            for(int y =0 ; y < tabla2[x].length;y++){
+            if(tabla2[x][0]==null){
+            }else{
+                System.out.print(" "+(x+1));
+            }            for(int y =0 ; y < tabla2[x].length;y++){
                 if(tabla2[x][y]==null){
                 }else{
-                    System.out.print(" "+(x+1)+"\t"+tabla2[x][y]+"\t\t\t");
+                    System.out.print(tabla2[x][y]+"\t\t\t");
                 }
             }
             System.out.println("");
@@ -668,10 +675,13 @@ public class Main {
             }
         System.out.println("#\tTOKEN\t\t\tCATEGORIA\t\t\tTIPO\t\t\tVALOR\t\t\tPRIORIDAD");
         for(int x = 0 ; x < tabla3.length;x++){
-            for(int y =0 ; y < tabla3[x].length;y++){
+            if(tabla3[x][0]==null){
+            }else{
+                System.out.print(" "+(x+1));
+            }            for(int y =0 ; y < tabla3[x].length;y++){
                 if(tabla3[x][y]==null){
                 }else{
-                    System.out.print(" "+(x+1)+"\t"+tabla3[x][y]+"\t\t\t");
+                    System.out.print("\t"+tabla3[x][y]+"\t\t\t");
                 }
             }
             System.out.println("");
@@ -861,10 +871,13 @@ public class Main {
             }
         System.out.println("#\tTOKEN\t\t\tCATEGORIA\t\t\tTIPO\t\t\tVALOR\t\t\tPRIORIDAD");
         for(int x = 0 ; x < tabla4.length;x++){
-            for(int y =0 ; y < tabla4[x].length;y++){
+            if(tabla4[x][0]==null){
+            }else{
+                System.out.print(" "+(x+1));
+            }            for(int y =0 ; y < tabla4[x].length;y++){
                 if(tabla4[x][y]==null){
                 }else{
-                    System.out.print(" "+(x+1)+"\t"+tabla4[x][y]+"\t\t\t");
+                    System.out.print("\t"+tabla4[x][y]+"\t\t\t");
                 }
             }
             System.out.println("");
@@ -1057,10 +1070,13 @@ public class Main {
             }
         System.out.println("#\tTOKEN\t\t\tCATEGORIA\t\t\tTIPO\t\t\tVALOR\t\t\tPRIORIDAD");
         for(int x = 0 ; x < tabla5.length;x++){
-            for(int y =0 ; y < tabla5[x].length;y++){
+            if(tabla5[x][0]==null){
+            }else{
+                System.out.print(" "+(x+1));
+            }            for(int y =0 ; y < tabla5[x].length;y++){
                 if(tabla5[x][y]==null){
                 }else{
-                    System.out.print(" "+(x+1)+"\t"+tabla5[x][y]+"\t\t\t");
+                    System.out.print("\t"+tabla5[x][y]+"\t\t\t");
                 }
             }
             System.out.println("");
