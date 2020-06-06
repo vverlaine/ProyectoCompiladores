@@ -171,12 +171,8 @@ public class Main {
             }
         }
         if(temp.indexOf(")")>0){
-            temp=temp.substring(0,temp.indexOf(")"))+temp.substring(temp.indexOf("(")+1,temp.length());
-            if(temp.indexOf(")")>0){
-                temp=temp.substring(0,temp.indexOf(")"))+temp.substring(temp.indexOf(")")+1,temp.length());
-            }else{
-                System.out.println("ERROR: FALTA CERRAR PARENTESIS");
-            }
+            temp=temp.replace(")","");
+            System.out.println("ERROR: FALTA ABRIR PARENTESIS");
         }
         
         
@@ -223,7 +219,8 @@ public class Main {
                 }
                 for (int z = 10; z < 100; z++) {
                     if(va3==99){
-                        if(va3>temp.substring(0,2).indexOf(String.valueOf(z))){
+                    if(temp.length()==1){
+                    }else if(va3>temp.substring(0,2).indexOf(String.valueOf(z))){
                             t3 =String.valueOf(z);
                             va3=temp.substring(0,2).indexOf(t3);
                             if (va3<0){
@@ -369,13 +366,9 @@ public class Main {
                 System.out.println("ERROR: FALTA CERRAR PARENTESIS");
             }
         }
-        if(temp.indexOf("(")>0){
-            temp=temp.substring(0,temp.indexOf("("))+temp.substring(temp.indexOf("(")+1,temp.length());
-            if(temp.indexOf(")")>0){
-                temp=temp.substring(0,temp.indexOf(")"))+temp.substring(temp.indexOf(")")+1,temp.length());
-            }else{
-                System.out.println("ERROR: FALTA CERRAR PARENTESIS");
-            }
+        if(temp.indexOf(")")>0){
+            temp=temp.replace(")","");
+            System.out.println("ERROR: FALTA ABRIR PARENTESIS");
         }
         
         
@@ -422,7 +415,8 @@ public class Main {
                 }
                 for (int z = 10; z < 100; z++) {
                     if(va3==99){
-                        if(va3>temp.substring(0,2).indexOf(String.valueOf(z))){
+                    if(temp.length()==1){
+                    }else if(va3>temp.substring(0,2).indexOf(String.valueOf(z))){
                             t3 =String.valueOf(z);
                             va3=temp.substring(0,2).indexOf(t3);
                             if (va3<0){
@@ -561,13 +555,9 @@ public class Main {
                 System.out.println("ERROR: FALTA CERRAR PARENTESIS");
             }
         }
-        if(temp.indexOf("(")>0){
-            temp=temp.substring(0,temp.indexOf("("))+temp.substring(temp.indexOf("(")+1,temp.length());
-            if(temp.indexOf(")")>0){
-                temp=temp.substring(0,temp.indexOf(")"))+temp.substring(temp.indexOf(")")+1,temp.length());
-            }else{
-                System.out.println("ERROR: FALTA CERRAR PARENTESIS");
-            }
+        if(temp.indexOf(")")>0){
+            temp=temp.replace(")","");
+            System.out.println("ERROR: FALTA ABRIR PARENTESIS");
         }
         
         
@@ -614,7 +604,8 @@ public class Main {
                 }
                 for (int z = 10; z < 100; z++) {
                     if(va3==99){
-                        if(va3>temp.substring(0,2).indexOf(String.valueOf(z))){
+                    if(temp.length()==1){
+                    }else if(va3>temp.substring(0,2).indexOf(String.valueOf(z))){
                             t3 =String.valueOf(z);
                             va3=temp.substring(0,2).indexOf(t3);
                             if (va3<0){
@@ -682,7 +673,7 @@ public class Main {
                 //CREACION DE TABLA DE SIMBOLOS -- FORMULA 4
         System.out.println("\n\nVALIDACION FORMULA 4----------------------------------------------------");
         p=13;
-        String tabla4[][] = new String[9][5];
+        String tabla4[][] = new String[8][5];
         System.out.println(datos[p]);
              
         //////////////////////////validacion operadores juntos
@@ -752,13 +743,9 @@ public class Main {
                 System.out.println("ERROR: FALTA CERRAR PARENTESIS");
             }
         }
-        if(temp.indexOf("(")>0){
-            temp=temp.substring(0,temp.indexOf("("))+temp.substring(temp.indexOf("(")+1,temp.length());
-            if(temp.indexOf(")")>0){
-                temp=temp.substring(0,temp.indexOf(")"))+temp.substring(temp.indexOf(")")+1,temp.length());
-            }else{
-                System.out.println("ERROR: FALTA CERRAR PARENTESIS");
-            }
+        if(temp.indexOf(")")>0){
+            temp=temp.replace(")","");
+            System.out.println("ERROR: FALTA ABRIR PARENTESIS");
         }
         
         
@@ -805,7 +792,8 @@ public class Main {
                 }
                 for (int z = 10; z < 100; z++) {
                     if(va3==99){
-                        if(va3>temp.substring(0,2).indexOf(String.valueOf(z))){
+                        if(temp.length()==1){
+                    }else if(va3>temp.substring(0,2).indexOf(String.valueOf(z))){
                             t3 =String.valueOf(z);
                             va3=temp.substring(0,2).indexOf(t3);
                             if (va3<0){
