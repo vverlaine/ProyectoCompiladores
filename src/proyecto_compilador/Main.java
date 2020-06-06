@@ -94,7 +94,7 @@ public class Main {
         //CREACION DE TABLA DE SIMBOLOS -- FORMULA 1
         System.out.println("\n\nVALIDACION FORMULA 1----------------------------------------------------");
         p=10;
-        String tabla1[][] = new String[10][5];
+        String tabla1[][] = new String[11][5];
         System.out.println(datos[p]);
         
         
@@ -257,21 +257,21 @@ public class Main {
                         tabla1[x][1]=t5;
                         tabla1[x][2]="N/A";
                         tabla1[x][3]="N/A";
-                        temp=temp.replace(tabla1[x][0],"");
+                        temp=temp.substring(t1.length(),temp.length());
                         break;
                     case 2:
                         tabla1[x][0]=temp.substring(0, t2.length());
                         tabla1[x][1]="VARIABLE";
                         tabla1[x][2]=t4;
                         tabla1[x][3]="N/A";                        
-                        temp=temp.replace(tabla1[x][0],"");
+                        temp=temp.substring(t2.length(),temp.length());
                         break;
                     case 3:
                         tabla1[x][0]=temp.substring(0, t3.length());
                         tabla1[x][1]="CONSTANTE";
                         tabla1[x][2]="Integer";
                         tabla1[x][3]=t3;                        
-                        temp=temp.replace(tabla1[x][0],"");
+                        temp=temp.substring(t3.length(),temp.length());
                         break;                   
                 }
             }                 
@@ -293,7 +293,7 @@ public class Main {
                 //CREACION DE TABLA DE SIMBOLOS -- FORMULA 2
         System.out.println("\n\nVALIDACION FORMULA 2----------------------------------------------------");
         p=11;
-        String tabla2[][] = new String[8][5];
+        String tabla2[][] = new String[9][5];
         System.out.println(datos[p]);
              
         
@@ -456,21 +456,21 @@ public class Main {
                         tabla2[x][1]=t5;
                         tabla2[x][2]="N/A";
                         tabla2[x][3]="N/A";
-                        temp=temp.replace(tabla2[x][0],"");
+                        temp=temp.substring(t1.length(),temp.length());
                         break;
                     case 2:
                         tabla2[x][0]=temp.substring(0, t2.length());
                         tabla2[x][1]="VARIABLE";
                         tabla2[x][2]=t4;
                         tabla2[x][3]="N/A";                        
-                        temp=temp.replace(tabla2[x][0],"");
+                        temp=temp.substring(t2.length(),temp.length());
                         break;
                     case 3:
                         tabla2[x][0]=temp.substring(0, t3.length());
                         tabla2[x][1]="CONSTANTE";
                         tabla2[x][2]="Integer";
                         tabla2[x][3]=t3;                        
-                        temp=temp.replace(tabla2[x][0],"");
+                        temp=temp.substring(t3.length(),temp.length());
                         break;  
                 }
             }                 
@@ -489,7 +489,7 @@ public class Main {
                 //CREACION DE TABLA DE SIMBOLOS -- FORMULA 3
         System.out.println("\n\nVALIDACION FORMULA 3----------------------------------------------------");
         p=12;
-        String tabla3[][] = new String[7][5];
+        String tabla3[][] = new String[9][5];
         System.out.println(datos[p]);
         
         //////////////////////////validacion operadores juntos
@@ -648,21 +648,21 @@ public class Main {
                         tabla3[x][1]=t5;
                         tabla3[x][2]="N/A";
                         tabla3[x][3]="N/A";
-                        temp=temp.replace(tabla3[x][0],"");
+                        temp=temp.substring(t1.length(),temp.length());
                         break;
                     case 2:
                         tabla3[x][0]=temp.substring(0, t2.length());
                         tabla3[x][1]="VARIABLE";
                         tabla3[x][2]=t4;
                         tabla3[x][3]="N/A";                        
-                        temp=temp.replace(tabla3[x][0],"");
+                        temp=temp.substring(t2.length(),temp.length());
                         break;
                     case 3:
                         tabla3[x][0]=temp.substring(0, t3.length());
                         tabla3[x][1]="CONSTANTE";
                         tabla3[x][2]="Integer";
                         tabla3[x][3]=t3;                        
-                        temp=temp.replace(tabla3[x][0],"");
+                        temp=temp.substring(t3.length(),temp.length());
                         break;  
                 }
             }                 
@@ -682,7 +682,7 @@ public class Main {
                 //CREACION DE TABLA DE SIMBOLOS -- FORMULA 4
         System.out.println("\n\nVALIDACION FORMULA 4----------------------------------------------------");
         p=13;
-        String tabla4[][] = new String[7][5];
+        String tabla4[][] = new String[9][5];
         System.out.println(datos[p]);
              
         //////////////////////////validacion operadores juntos
@@ -839,21 +839,21 @@ public class Main {
                         tabla4[x][1]=t5;
                         tabla4[x][2]="N/A";
                         tabla4[x][3]="N/A";
-                        temp=temp.replace(tabla4[x][0],"");
+                        temp=temp.substring(t1.length(),temp.length());
                         break;
                     case 2:
                         tabla4[x][0]=temp.substring(0, t2.length());
                         tabla4[x][1]="VARIABLE";
                         tabla4[x][2]=t4;
                         tabla4[x][3]="N/A";                        
-                        temp=temp.replace(tabla4[x][0],"");
+                        temp=temp.substring(t2.length(),temp.length());
                         break;
                     case 3:
                         tabla4[x][0]=temp.substring(0, t3.length());
                         tabla4[x][1]="CONSTANTE";
                         tabla4[x][2]="Integer";
                         tabla4[x][3]=t3;                        
-                        temp=temp.replace(tabla4[x][0],"");
+                        temp=temp.substring(t3.length(),temp.length());
                         break;  
                 }
             }                 
@@ -872,7 +872,7 @@ public class Main {
                 //CREACION DE TABLA DE SIMBOLOS -- FORMULA 5
         System.out.println("\n\nVALIDACION FORMULA 5----------------------------------------------------");
         p=14;
-        String tabla5[][] = new String[7][5];
+        String tabla5[][] = new String[8][5];
         System.out.println(datos[p]);
         
         
@@ -1033,21 +1033,21 @@ public class Main {
                         tabla5[x][1]=t5;
                         tabla5[x][2]="N/A";
                         tabla5[x][3]="N/A";
-                        temp=temp.replace(tabla5[x][0],"");
+                        temp=temp.substring(t1.length(),temp.length());
                         break;
                     case 2:
                         tabla5[x][0]=temp.substring(0, t2.length());
                         tabla5[x][1]="VARIABLE";
                         tabla5[x][2]=t4;
                         tabla5[x][3]="N/A";                        
-                        temp=temp.replace(tabla5[x][0],"");
+                        temp=temp.substring(t2.length(),temp.length());
                         break;
                     case 3:
                         tabla5[x][0]=temp.substring(0, t3.length());
                         tabla5[x][1]="CONSTANTE";
                         tabla5[x][2]="Integer";
                         tabla5[x][3]=t3;                        
-                        temp=temp.replace(tabla5[x][0],"");
+                        temp=temp.substring(t3.length(),temp.length());
                         break;  
                 }
             }                 
